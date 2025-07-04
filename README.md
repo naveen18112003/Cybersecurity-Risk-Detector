@@ -139,10 +139,7 @@ cyber-risk-detector/
 
 ---
 
-How to Collect Cybersecurity Risk Parameters on Windows
-Number of Vulnerabilities
-Definition: Known flaws or bugs in your system/software that attackers can exploit.
-Tools/Methods:
+## How to Collect Cybersecurity Risk Parameters on WindowsNumber of Vulnerabilities Definition: Known flaws or bugs in your system/software that attackers can exploit Tools/Methods:
 
 Use Nessus (https://www.tenable.com/products/nessus) to scan and report system vulnerabilities.
 
