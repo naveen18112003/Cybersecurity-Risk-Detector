@@ -139,3 +139,85 @@ cyber-risk-detector/
 
 ---
 
+How to Collect Cybersecurity Risk Parameters on Windows
+Number of Vulnerabilities
+Definition: Known flaws or bugs in your system/software that attackers can exploit.
+Tools/Methods:
+
+Use Nessus (https://www.tenable.com/products/nessus) to scan and report system vulnerabilities.
+
+Use Microsoft Defender: Go to Windows Security → Virus & threat protection → Protection history
+
+System Uptime (in days)
+Definition: The number of days your system has been running continuously.
+Commands:
+
+Command Prompt: systeminfo | find "System Boot Time"
+
+PowerShell: (get-date) - (gcim Win32_OperatingSystem).LastBootUpTime
+
+Number of Security Incidents
+Definition: Events like failed logins, malware detection, unauthorized access.
+Steps:
+
+Open Event Viewer: Press Win + R → type: eventvwr.msc
+
+Navigate to Windows Logs → Security
+
+Check for:
+
+4625: Failed login attempts
+
+4688: Suspicious process creation
+
+4720: New user account created
+
+Also check: Windows Security → Virus & Threat Protection → Protection history
+
+Patch Update Frequency
+Definition: How frequently system updates are applied (Daily/Weekly/Monthly).
+Steps:
+
+Go to Settings → Update & Security → View update history
+
+Based on pattern:
+
+Daily: Every 1–2 days
+
+Weekly: Once a week
+
+Monthly: Once or twice a month
+
+Number of Open Ports
+Definition: Network ports that are open and accepting connections.
+Commands:
+
+Command Prompt: netstat -an | find "LISTEN"
+
+PowerShell: Get-NetTCPConnection | Where-Object {$_.State -eq "Listen"} | Measure-Object
+
+Ideal For:
+
+Final year ML/Cybersecurity projects
+
+Resume and portfolio projects
+
+Practical demonstration in colleges or workshops
+
+Awareness tool for non-tech users
+
+Let me know if you'd like to add:
+
+Your name and college
+
+Demo screenshots
+
+Submission date
+
+I can generate that version too!
+
+
+
+
+
+
