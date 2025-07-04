@@ -1,81 +1,141 @@
-# Cybersecurity Risk Detector
 
-## Overview
-This project was developed as part of a machine learning assignment to build a **Cybersecurity Risk Detector**. The aim was to classify and detect potential cybersecurity threats using custom-generated datasets and machine learning algorithms. The project culminates in a local web application for real-time risk prediction.
 
-## Project Requirements and Implementation
-### Problem Selection
-The project tackles a classification problem to determine the presence or absence of cybersecurity risks. The dataset was custom-generated using Python and saved as `veri.csv`.
+---
 
-### Implementation Steps
-1. **Dataset Creation:**
-   - Generated synthetic data (`veri.csv`) using Python and stored the code in `veri.ipynb`.
-2. **Model Training:**
-   - Trained the dataset using 10 different machine learning algorithms.
-   - Selected the best-performing algorithm based on Accuracy.
-   - Saved the best model as `eniyi.joblib`.
-3. **Web Application Development:**
-   - Designed a local web application using Streamlit.
-   - Integrated the trained model (`eniyi.joblib`) for real-time predictions.
-4. **Project Demonstration:**
-   - A demonstration video link showcasing the working application is provided in `link.text`.
+## 📘 Project Guide — *Cybersecurity Risk Detector using ML & Streamlit*
 
-## Features
-- Custom dataset generation.
-- Evaluation of multiple ML algorithms.
-- Streamlit-based web application for risk detection.
-- Best model saved for reuse.
+---
 
-## Technologies Used
-- **Programming Language:** Python
-- **Libraries:**
-  - Scikit-learn (ML algorithms)
-  - Pandas, NumPy (data processing)
-  - Matplotlib (visualization)
-  - Streamlit (web application)
-- **Model Serialization:** joblib
-- **Version Control:** Git
+### 🛡️ Project Title:
 
-## Installation
-1. Clone the repository:
+**Cybersecurity Risk Detector**
+
+---
+
+### 📌 Problem Statement:
+
+In today's digital world, systems are often exposed to various cybersecurity threats. Regular users or organizations may not always have the expertise or tools to assess their system’s security posture in real-time.
+
+This project solves that problem by using **machine learning** to predict the **cyber risk level** of a system based on a few basic input parameters.
+
+---
+
+### 🎯 Objective:
+
+To develop a machine learning-based web application that:
+
+* Accepts key system information from users
+* Predicts whether the system is at **Low**, **Medium**, or **High** cybersecurity risk
+* Is easy to use by anyone via a simple web interface
+
+---
+
+### 🧠 Novelty of the Project:
+
+| Aspect                        | Innovation                                                                                                                                    |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🧾 **Custom Dataset**         | Dataset was synthetically generated to mimic real-world system vulnerabilities and incidents, allowing full control over features and labels. |
+| 🔄 **Multi-Model Comparison** | 10+ ML algorithms were tested, evaluated, and compared to choose the best-performing model.                                                   |
+| 🌐 **Streamlit Integration**  | Real-time web interface created using Streamlit, enabling users to interactively test risk levels without needing any technical setup.        |
+| 📦 **Reusable Model**         | Best model was saved using `joblib` and integrated into the app for lightweight and fast predictions.                                         |
+| 🎓 **Educational Tool**       | Project also acts as a learning resource for beginners in ML + cybersecurity domains.                                                         |
+
+---
+
+### 🛠️ Technologies Used:
+
+* **Programming Language:** Python
+* **ML Libraries:** scikit-learn
+* **Data Processing:** pandas, numpy
+* **Visualization:** matplotlib
+* **Web App Framework:** Streamlit
+* **Model Saving:** joblib
+* **Version Control:** Git & GitHub
+
+---
+
+### 🔧 Implementation Steps:
+
+#### 1. Dataset Creation:
+
+* A synthetic dataset was generated and saved as `veri.csv` using Python code (`veri.ipynb`).
+* Features included: vulnerabilities, uptime, incidents, patch frequency, and open ports.
+
+#### 2. Model Training:
+
+* Trained 10 different ML models: Decision Tree, Random Forest, Logistic Regression, etc.
+* Selected the **best-performing model** based on accuracy and precision.
+* Saved final model as `eniyi.joblib`.
+
+#### 3. Web App Development:
+
+* Built a user interface using **Streamlit** where users can input system data.
+* Integrated the trained model into the app to predict real-time cyber risk.
+
+#### 4. Testing & Demonstration:
+
+* The app was tested with different inputs.
+* A working demo video is linked in `link.text`.
+
+---
+
+### 📊 Sample Inputs:
+
+| Parameter          | Example |
+| ------------------ | ------- |
+| Vulnerabilities    | 10      |
+| Uptime (days)      | 120     |
+| Security Incidents | 3       |
+| Patch Frequency    | Weekly  |
+| Open Ports         | 12      |
+
+**Prediction Output:** 🔴 **High Risk**
+
+---
+
+### 📁 Project Structure:
+
+```
+cyber-risk-detector/
+├── veri.csv                  # Generated dataset
+├── veri.ipynb                # Data generation & training notebook
+├── eniyi.joblib              # Trained ML model
+├── app.py                    # Streamlit web app
+├── README.md                 # Project description
+└── link.text                 # Demo video link
+```
+
+---
+
+### 🚀 How to Run Locally:
+
+1. Clone the repo:
+
    ```bash
-   git clone https://github.com/dirshaye/Cybersecurity_Risk_Detector.git
+   git clone https://github.com/yourusername/cyber-risk-detector
+   cd cyber-risk-detector
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd dirshaye-cyber_security_risk_detector
-   ```
-3. Install the dependencies:
+
+2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
-1. Ensure the dataset (`veri.csv`) is in the root directory.
-2. To train models and select the best one:
-   ```bash
-   python app.py
-   ```
-3. Launch the web application:
+3. Run the app:
+
    ```bash
    streamlit run app.py
    ```
-4. Access the application in your browser and test predictions.
 
-## Project Structure
-```
-└── dirshaye-cyber_security_risk_detector/
-    ├── algoritma.ipynb     # Notebook for evaluating algorithms
-    ├── app.py              # Streamlit application script
-    ├── eniyi.joblib        # Best-performing ML model
-    ├── link.text           # Video demonstration link
-    ├── veri.csv            # Generated dataset
-    └── veri.ipynb          # Notebook for dataset generation
-```
+---
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+### 🎓 Ideal For:
 
-## Contact
-For any questions or feedback, feel free to reach out:
-- GitHub: [dirshaye](https://github.com/dirshaye)
+* B.Tech/BE Machine Learning projects
+* Cybersecurity awareness tools
+* Educational demos for risk modeling
+* Personal portfolio project
+
+---
+
